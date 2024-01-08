@@ -1,0 +1,53 @@
+*::before, *, *::after{box-sizing: border-box; padding: 0; margin: 0; text-decoration: none; list-style: none; outline: none;}
+:root{
+    --dark-grey-400: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --dark-grey-600: hsl(0, 0%, 27%);
+}
+body{font: 500 14px/1.5 'League Spartan', sans-serif; color: var(--dark-grey-400)}
+h1{font-size: 2.5rem; text-wrap: balance; font-weight: 700; line-height: 1;}
+h1, .about h2, a{color: var(--black);}
+.about h2{font-size: clamp(14px, 2vw, 1rem);}
+.about h2, .btn{letter-spacing: 3px; font-weight: 600; text-transform: uppercase;}
+img{max-width: 100%; min-height: 100%; object-fit: cover;}
+.container{width: 80%; max-width: 720px; margin-inline: auto;}
+.w-100{width: 100%;}
+.d-flex{display: flex; align-items: center;}
+header a{color: var(--white);}
+nav > .d-flex + .d-flex{margin-left: 4rem; font-size: 18px; color: var(--white); gap: 2rem;}
+.btn{padding-top: 2rem; display: inline-block; transition: color 1s ease-out;}
+.btn:hover{color: var(--dark-grey-400)}
+header{background: url('./images/desktop-image-hero-1.jpg') no-repeat center / cover; min-height: 50vh; transition: background-image 1s ease-in-out;}
+.hero_control{ max-height: 2.7rem}
+.hero_control img{padding: 1.5rem 1.75rem; background-color: var(--black); transition: background-color 1s ease-in-out;}
+.hero_control img:hover{background-color: var(--dark-grey-600); cursor: pointer;}
+.hero_section, .about_section{padding-block: 3rem;}
+.hero_section--text, .about_section p{padding-top: 1rem;}
+nav{ padding-block: 2rem}
+
+@media screen and (max-width: 410px) {nav > .d-flex + .d-flex{gap: .8rem}}
+@media screen and (max-width: 900px) {
+    .hero_control img{padding: 1rem 1.5rem;}
+    .hero_section{position: relative;}
+    .hero_control{position: absolute; top: -3.5rem; right: 0;}  
+    .hidden{display: none;}
+    nav.container a{color: var(--dark-grey-600); width: 100%;}
+    nav > .d-flex + .d-flex{width: 80%; margin-inline: auto;}
+}
+
+@media screen and (min-width: 900px) {
+    main, .hero, .about{display: grid;}
+    main{ grid-template-rows: 1.75fr 1.25fr;}
+    header{padding-top: 1.2rem;}
+    .hero{grid-template-columns: 1.75fr 1.25fr;position: relative}
+    .about{grid-template-columns: repeat(3, 1fr);}
+    .btn{padding-bottom: 6rem;}   
+    .hero_section{padding-top: 5rem;}
+    .hero_section--text{padding-top: 2rem;}
+    .hero_control{position: absolute; bottom: 1.8rem;}
+    nav{display: flex; background-color: transparent !important; width: 80% !important;}
+    nav > .d-flex:first-child li:first-child, .toggle_btn--close{display: none;}
+    nav > .d-flex:last-child li{transition: border-bottom 5s ease-in-out;}
+    nav > .d-flex:last-child li:hover{border-bottom: 1px solid var(--white);}
+}
