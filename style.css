@@ -27,9 +27,10 @@ header{background: url('./images/desktop-image-hero-1.jpg') no-repeat center / c
 nav{ padding-block: 2rem}
 
 @media screen and (max-width: 410px) {nav > .d-flex + .d-flex{gap: .8rem}}
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 899px) {
     .hero_control img{padding: 1rem 1.5rem;}
     .hero_section{position: relative;}
+    header{min-height: 50vh; }
     .hero_control{position: absolute; top: -3.5rem; right: 0;}  
     .hidden{display: none;}
     nav.container a{color: var(--dark-grey-600); width: 100%;}
@@ -42,7 +43,7 @@ nav{ padding-block: 2rem}
     header{padding-top: 1.2rem;}
     .hero{grid-template-columns: 1.75fr 1.25fr;position: relative}
     .about{grid-template-columns: repeat(3, 1fr);}
-    .btn--link{padding-bottom: 6rem;}   
+    .btn--link{padding-bottom: 3rem;}   
     .hero_section{padding-top: 5rem;}
     .hero_section--text{padding-top: 2rem;}
     .hero_control{position: absolute; bottom: 1.8rem;}
