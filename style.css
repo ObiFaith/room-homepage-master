@@ -9,16 +9,16 @@ body{font: 500 14px/1.5 'League Spartan', sans-serif; color: var(--dark-grey-400
 h1{font-size: 2.5rem; text-wrap: balance; font-weight: 700; line-height: 1;}
 h1, .about h2, a{color: var(--black);}
 .about h2{font-size: clamp(14px, 2vw, 1rem);}
-.about h2, .btn{letter-spacing: 3px; font-weight: 600; text-transform: uppercase;}
+.about h2, .btn--link{letter-spacing: 3px; font-weight: 600; text-transform: uppercase;}
 img{max-width: 100%; min-height: 100%; object-fit: cover;}
 .container{width: 80%; max-width: 720px; margin-inline: auto;}
 .w-100{width: 100%;}
 .d-flex{display: flex; align-items: center;}
 header a{color: var(--white);}
 nav > .d-flex + .d-flex{margin-left: 4rem; font-size: 18px; color: var(--white); gap: 2rem;}
-.btn{padding-top: 2rem; display: inline-block; transition: color 1s ease-out;}
-.btn:hover{color: var(--dark-grey-400)}
-header{background: url('./images/desktop-image-hero-1.jpg') no-repeat center / cover; min-height: 50vh; transition: background-image 1s ease-in-out;}
+.btn--link{padding-top: 2rem; display: inline-block; transition: color 1s ease-out;}
+.btn--link:hover{color: var(--dark-grey-400)}
+header{background: url('./images/desktop-image-hero-1.jpg') no-repeat center / cover; transition: background-image 1s ease-in-out;}
 .hero_control{ max-height: 2.7rem}
 .hero_control img{padding: 1.5rem 1.75rem; background-color: var(--black); transition: background-color 1s ease-in-out;}
 .hero_control img:hover{background-color: var(--dark-grey-600); cursor: pointer;}
@@ -42,7 +42,7 @@ nav{ padding-block: 2rem}
     header{padding-top: 1.2rem;}
     .hero{grid-template-columns: 1.75fr 1.25fr;position: relative}
     .about{grid-template-columns: repeat(3, 1fr);}
-    .btn{padding-bottom: 6rem;}   
+    .btn--link{padding-bottom: 6rem;}   
     .hero_section{padding-top: 5rem;}
     .hero_section--text{padding-top: 2rem;}
     .hero_control{position: absolute; bottom: 1.8rem;}

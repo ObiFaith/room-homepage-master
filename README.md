@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [link](https://obifaith.github.io/room-homepage-master/)
-- Solution URL: [link](https://github.com/ObiFaith/room-homepage-master)
+- Live Site URL: [url link](https://obifaith.github.io/room-homepage-master/)
+- Solution URL: [url link](https://github.com/ObiFaith/room-homepage-master)
 
 ## My process
 
@@ -72,9 +72,9 @@ toggleBtns.forEach(btn => {
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - Made it easier to create the Slider functionality since I used stored and retrieve the necessary data in a JSON format
+- [Build 15 projects using vanilla JS](https://www.youtube.com/watch?v=3PHXvlpOkf4) - Made it easier to create the Slider functionality since I used stored and retrieve the necessary data in a JSON format
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ObiFaith)
-- Twitter - [@yourusername](https://www.twitter.com/Faith_Dev)
+- Frontend Mentor - [@ObiFaith](https://www.frontendmentor.io/profile/ObiFaith)
+- Twitter - [@Faith_Dev_](https://www.twitter.com/Faith_Dev)
